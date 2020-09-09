@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #message{
+            background-color: red;
+            color: white;
+            width: 400px;
+            
+        }
+        input{
+            height: 30px;
+            min-width: 150px;
+        }
+        input[type="button"]{
+            color: white;
+        }
+    </style>
     <title>Thermometer Converter</title>
 </head>
 <body>
@@ -10,6 +25,7 @@
     <h1>THERMOMETER CONVERTER</h1>
     <p>Our offline temperature converter allows you to convert between celcius,kelvin and farenheit scales</p>
     <p>Enter a temperature value to get the equivalent in other temperature scales</p>
+    <p id="message"></p>
     <div>
         <input type="number" id="celcius" class="inputClass" placeholder="Celcius">
         <input type="number" id="farenheit" class="outputClass" placeholder="Farenheight">

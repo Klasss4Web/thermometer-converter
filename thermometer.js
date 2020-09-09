@@ -1,16 +1,4 @@
-/*class Calculation{
-    constructor(w,x,y,z){
-        this.w = w;
-        this.x = x;
-        this.y = y;
-        this.z = z;
-    }
-    opening(){
-        if(itemsName == 'Gold')
-        open.value = goldOp;
-    }
-}
-*/
+
 inputValue = document.getElementById('celcius');
 outputValue = document.getElementById('farenheit');
 submitBtn = document.getElementById('submitButton');
@@ -21,8 +9,8 @@ submitBtn.addEventListener('click',enter);
 
 function enter(){
     if(inputValue.value == '' && kelvin.value == '' && farenheit.value == ''){
-        alert('please Enter a valid number');
-        
+        messageAlert('please Enter a valid number');
+        setTimeout(messageAlert,3000);
         
     }else if(kelvin.value !==''){
         inputValue.value = kelvinToCelcius(kelvin.value);
@@ -66,37 +54,16 @@ function farenheitToCelcius(F){
 function farenheitToKelvin(F){
     return (parseInt(F) + parseInt(459.67) )*0.556;
 }
-//Input Fields
-class Person{
-    constructor(name, sex, department,nationality){
-        this.name = name;
-        this.sex = sex;
-        this.department = department;
-        this.nationality = nationality;
-
-    }   
-    description(){
-        return `hello there, my name is ${this.name} and I am from ${this.nationality}`
-    };
-    }
-    class Records extends Person{
-        constructor( name,sex,department,nationality,taxBurden){
-        super(name,sex,department,nationality);
-        
-
-        this.taxBurden = taxBurden;
-        
-        }  
-        
-        taxDebt(){
-            return `My tax debt is equal to ${this.taxBurden}`
-        }
-    }
         
     
 
-    let chadwick = new Person("Chadwick","male","tourism","Canada");
-    let jane = new Person("Jane","female","Project Management","Brazil")
-    let stone = new Records("John Stones","Male","Administration","USA","$0")
-    console.log(stone);
+    function messageAlert(msg){
+       let notification = document.getElementById('message')
+       //message.style.height = "25px";
+       message.textContent = msg;
+      
+       
+        
+    }
 
+    
