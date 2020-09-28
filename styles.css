@@ -1,0 +1,23 @@
+body{
+    background: burlywood;
+}
+#message{
+    background-color: red;
+    color: white;
+    width: 400px;
+    
+}
+h1{
+    color: brown;
+}
+p{
+    font-size: 18px;
+}
+input{
+    height: 30px;
+    min-width: 150px;
+}
+input[type="button"]{
+    color: white;
+    background-color: brown;
+}

@@ -1,4 +1,4 @@
-
+//UI Input Values
 inputValue = document.getElementById('celcius');
 outputValue = document.getElementById('farenheit');
 submitBtn = document.getElementById('submitButton');
@@ -29,37 +29,41 @@ function enter(){
     };
 }
 
+//Fuction to Conver Celcius to Farenheit
 function celciusToFarenheit(C){
     return  1.8*C + 32;
         
 }
 
+//Function to Convert Celcius to Klvin
 function celciusToKelvin(C){
     return parseInt(273) + parseInt(C);
 }
 
-
+//Function to Convert Kelvin to Celcius
 function kelvinToCelcius(K){
     return parseInt(K) - parseInt(273);
 }
-
+//Function to Conver Kelvin to Farenheit
 function kelvinToFarenheit(K){
     return 1.8*K - 459.67;
 }
 
+//Function to Conver Farenheit to Celcius
 function farenheitToCelcius(F){
     return (F - 32)/1.8;
 }
 
+//Function to Convert Farenheit to Kelvin
 function farenheitToKelvin(F){
     return (parseInt(F) + parseInt(459.67) )*0.556;
 }
         
     
-
+    //Error Message
     function messageAlert(msg){
        let notification = document.getElementById('message')
-       //message.style.height = "25px";
+       
        message.textContent = msg;
       
        
